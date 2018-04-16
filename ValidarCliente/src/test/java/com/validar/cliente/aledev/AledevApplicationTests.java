@@ -1,4 +1,4 @@
-package com.personal.challenge.aledev;
+package com.validar.cliente.aledev;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -10,7 +10,27 @@ import org.springframework.test.context.junit4.SpringRunner;
 public class AledevApplicationTests {
 
 	@Test
-	public void contextLoads() {
+	public void makeAClientrequest(){
+
 	}
 
+	@Test
+	public void sendMailWithClientInformation(){
+
+	}
+
+	@Test
+	public void persistAClient(){
+
+	}
+
+	@Test
+	public void fetchCanadaAttendant(){
+
+	}
+
+	@Test
+	public void insertIntoMessageBus(){
+
+	}
 }
