@@ -19,5 +19,4 @@ public class PropuestaClienteServiceImpl implements PropuestaClienteService {
     private RestTemplate restTemplate;
 
 
-
 }

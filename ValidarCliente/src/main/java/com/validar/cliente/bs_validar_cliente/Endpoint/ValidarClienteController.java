@@ -1,6 +1,8 @@
 package com.validar.cliente.bs_validar_cliente.Endpoint;
 
 
+import com.validar.cliente.bs_validar_cliente.DTO.ClienteDTO;
+import com.validar.cliente.bs_validar_cliente.model.Cliente;
 import com.validar.cliente.bs_validar_cliente.service.ValidarClienteService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -19,7 +21,8 @@ public class ValidarClienteController {
     @GetMapping("/method/{name}")
     public String method(@PathVariable String name){
         System.out.println("Hi " + name + ", it is working on port 8181");
-        validarClienteService.registerCliente(null);
+        ClienteDTO cliente = new ClienteDTO();
+        validarClienteService.registerCliente(cliente.s);
         return name;
     }
 
