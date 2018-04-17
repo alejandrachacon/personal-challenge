@@ -1,7 +1,7 @@
-package com.validar.cliente.aledev.Endpoint;
+package com.validar.cliente.bs_validar_cliente.Endpoint;
 
 
-import com.validar.cliente.aledev.service.ValidarClienteService;
+import com.validar.cliente.bs_validar_cliente.service.ValidarClienteService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

@@ -1,4 +1,4 @@
-package com.validar.cliente.aledev.DTO;
+package com.validar.cliente.bs_validar_cliente.DTO;
 
 import lombok.Data;
 import lombok.experimental.Accessors;

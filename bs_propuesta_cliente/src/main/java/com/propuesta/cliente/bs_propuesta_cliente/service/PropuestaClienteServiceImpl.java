@@ -1,4 +1,23 @@
 package com.propuesta.cliente.bs_propuesta_cliente.service;
 
-public class PropuestaClienteServiceImpl {
+import com.propuesta.cliente.bs_propuesta_cliente.repository.PropuestaClienteRepository;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
+
+@Service
+public class PropuestaClienteServiceImpl implements PropuestaClienteService {
+
+    @Value("${endpoint.url}")
+    private String url;
+
+    @Autowired
+    private PropuestaClienteRepository propuestaClienteRepository;
+
+    @Autowired
+    private RestTemplate restTemplate;
+
+
+
 }

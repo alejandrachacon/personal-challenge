@@ -1,4 +1,4 @@
-package com.validar.cliente.aledev.model;
+package com.propuesta.cliente.bs_propuesta_cliente.model;
 
 
 import lombok.Data;
@@ -11,10 +11,11 @@ import javax.persistence.Id;
 
 @Data
 @Entity
-@Accessors(chain= true)
-public class Cliente {
+@Accessors(chain=true)
+public class PropuestaCliente {
     @Id
-    @GeneratedValue(strategy= GenerationType.IDENTITY)
-    private Long id;
-    private String name;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private long id;
+    private String title;
+
 }

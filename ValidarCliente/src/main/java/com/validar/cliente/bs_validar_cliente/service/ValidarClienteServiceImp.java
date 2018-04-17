@@ -1,7 +1,7 @@
-package com.validar.cliente.aledev.service;
+package com.validar.cliente.bs_validar_cliente.service;
 
-import com.validar.cliente.aledev.DTO.ClienteDTO;
-import com.validar.cliente.aledev.repository.ClienteRepository;
+import com.validar.cliente.bs_validar_cliente.DTO.ClienteDTO;
+import com.validar.cliente.bs_validar_cliente.repository.ClienteRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;

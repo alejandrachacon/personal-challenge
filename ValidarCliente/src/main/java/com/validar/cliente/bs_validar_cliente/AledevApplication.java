@@ -1,7 +1,7 @@
-package com.validar.cliente.aledev;
+package com.validar.cliente.bs_validar_cliente;
 
-import com.validar.cliente.aledev.service.ValidarClienteService;
-import com.validar.cliente.aledev.service.ValidarClienteServiceImp;
+import com.validar.cliente.bs_validar_cliente.service.ValidarClienteService;
+import com.validar.cliente.bs_validar_cliente.service.ValidarClienteServiceImp;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.client.RestTemplateBuilder;

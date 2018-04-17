@@ -1,4 +1,4 @@
-package com.validar.cliente.aledev;
+package com.validar.cliente.bs_validar_cliente;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
