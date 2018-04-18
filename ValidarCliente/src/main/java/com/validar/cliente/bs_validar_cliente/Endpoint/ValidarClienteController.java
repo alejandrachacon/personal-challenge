@@ -21,8 +21,8 @@ public class ValidarClienteController {
     @GetMapping("/method/{name}")
     public String method(@PathVariable String name){
         System.out.println("Hi " + name + ", it is working on port 8181");
-        ClienteDTO cliente = new ClienteDTO();
-        validarClienteService.registerCliente(cliente.s);
+      //  ClienteDTO cliente = new ClienteDTO();
+      //  validarClienteService.registerCliente(cliente.s);
         return name;
     }
 

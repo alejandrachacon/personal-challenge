@@ -11,8 +11,6 @@ import org.springframework.web.client.RestTemplate;
 @Service
 public class ValidarClienteServiceImp implements ValidarClienteService {
 
-    @Value("${endpoint.url}")
-    private String url;
 
     @Autowired
     private ClienteRepository clienteRepository;
@@ -22,7 +20,7 @@ public class ValidarClienteServiceImp implements ValidarClienteService {
 
     @Override
     public String registerCliente(ClienteDTO clienteDTO) {
-        restTemplate.postForEntity(url,"jkasdbas",String.class);
+       // restTemplate.postForEntity(,"jkasdbas",String.class);
         System.out.println("client registered in Validar cliente service implementation");
         return null;
     }
