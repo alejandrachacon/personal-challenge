@@ -9,7 +9,6 @@ import org.springframework.web.client.RestTemplate;
 @Service
 public class PropuestaClienteServiceImpl implements PropuestaClienteService {
 
-    @Value("${endpoint.url}")
     private String url;
 
     @Autowired
