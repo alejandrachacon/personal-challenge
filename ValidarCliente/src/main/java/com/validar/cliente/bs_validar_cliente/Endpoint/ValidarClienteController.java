@@ -11,14 +11,12 @@ public class ValidarClienteController {
 
     private ValidarClienteService validarClienteService;
 
-
-    @Autowired
     public ValidarClienteController(ValidarClienteService validarClienteService){this.validarClienteService = validarClienteService; }
 
-    @PostMapping("/request-conflict-interest")
+    @PostMapping("/request")
     public String requestConflictInterest(@RequestBody Cliente client){
         System.out.println(client.getName());
-        // validarClienteService.putClientIntoMessageBus(client);
+        validarClienteService.putClientIntoMessageBus(client);
         return "your request has been sent";
     }
 

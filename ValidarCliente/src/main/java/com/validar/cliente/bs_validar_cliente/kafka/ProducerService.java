@@ -20,7 +20,7 @@ import java.util.function.BiFunction;
 public class ProducerService {
 
     private static Schema CLIENTE_SCHEMA;
-    final KafkaProducer<String, GenericRecord> producer;
+    private final KafkaProducer producer;
     private static final String TOPIC = "gestionClientes";
 
 
