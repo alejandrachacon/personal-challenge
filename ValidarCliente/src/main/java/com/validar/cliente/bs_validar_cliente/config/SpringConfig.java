@@ -3,6 +3,7 @@ package com.validar.cliente.bs_validar_cliente.config;
 
 import com.validar.cliente.bs_validar_cliente.kafka.ProducerService;
 import com.validar.cliente.bs_validar_cliente.service.ValidarClienteServiceImp;
+import io.confluent.kafka.serializers.KafkaAvroSerializer;
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.ProducerConfig;
 import org.springframework.context.annotation.Bean;
@@ -19,8 +20,8 @@ public class SpringConfig {
     @Bean
     public KafkaProducer producer(){
         final Properties producerConfig = new Properties();
-        producerConfig.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, io.confluent.kafka.serializers.KafkaAvroSerializer.class);
-        producerConfig.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG,io.confluent.kafka.serializers.KafkaAvroSerializer.class );
+        producerConfig.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, KafkaAvroSerializer.class);
+        producerConfig.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, KafkaAvroSerializer.class );
         producerConfig.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, BOOTSTRAP_SERVERS);
         producerConfig.put("acks", "all");
         producerConfig.put("retries", 0);

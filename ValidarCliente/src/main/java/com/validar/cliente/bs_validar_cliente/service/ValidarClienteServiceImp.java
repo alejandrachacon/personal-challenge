@@ -27,7 +27,7 @@ public class ValidarClienteServiceImp implements ValidarClienteService {
     @Override
     public boolean putClientIntoMessageBus(Cliente cliente) {
 
-        producerService.sendToKafka(cliente.getId().toString(), transformCliente(cliente));
+        producerService.sendToKafka(cliente.getName(), transformCliente(cliente));
 
         return false;
     }

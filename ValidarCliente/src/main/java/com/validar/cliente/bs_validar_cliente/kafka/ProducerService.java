@@ -21,7 +21,7 @@ public class ProducerService {
 
     private static Schema CLIENTE_SCHEMA;
     private final KafkaProducer producer;
-    private static final String TOPIC = "gestionClientes";
+    private static final String TOPIC = "gestionClient";
 
 
     static{
